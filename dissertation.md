@@ -12,7 +12,7 @@ permalink: /dissertation/
 PhD Dissertation · Delft University of Technology · 2026
 {: .d}
 
-[Download the dissertation — PDF ↓]({{ '/assets/pdf/queering-ai-dissertation.pdf' | relative_url }}) · [DOI, TU Delft Repository ↗]({{ site.dissertation_doi }})
+[Download the dissertation from the TU Delft Repository ↗]({{ site.dissertation_doi }})
 
 ### Abstract
 

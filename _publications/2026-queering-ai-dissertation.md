@@ -4,7 +4,6 @@ type: Dissertation
 venue: Delft University of Technology
 date: 2026-06-01
 doi: "10.4233/uuid:64ac5d12-82dd-4f29-af8a-75828d006a3b"
-pdf: /assets/pdf/queering-ai-dissertation.pdf
 link: /dissertation/
 summary: >-
   A more-than-human design practice of queering AI, reconfiguring predictive
