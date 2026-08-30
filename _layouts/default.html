@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != '/' %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="masthead">
+    <a class="name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <div class="meta">Design<br>Research</div>
+    <div class="meta">Amsterdam<br>{{ 'now' | date: '%Y' }}</div>
+    <nav>
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#currently' | relative_url }}">Currently</a>
+      <a href="{{ '/dissertation/' | relative_url }}">Dissertation</a>
+      <a href="{{ '/#writing' | relative_url }}">Writing</a>
+      <a href="{{ site.substack_url }}">Substack&nbsp;↗</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p class="eco">This website has been designed to minimise energy consumption and CO<sub>2</sub> emissions: no scripts, no tracking, no web fonts, almost no images.</p>
+    <div class="cta">
+      <p>For writing, speaking and teaching enquiries, get in touch by <a href="mailto:{{ site.email }}">email</a>.</p>
+      <p>For regular updates, follow me on <a href="{{ site.x_url }}">X&nbsp;↗</a> and <a href="{{ site.instagram_url }}">Instagram&nbsp;↗</a>, or connect with me on <a href="{{ site.linkedin_url }}">LinkedIn&nbsp;↗</a>.</p>
+    </div>
+    <p class="colophon">© {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>

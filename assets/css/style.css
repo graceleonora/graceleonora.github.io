@@ -1,0 +1,128 @@
+/* ~4 KB, no webfonts, no JS — designed for minimal transfer & render cost */
+:root {
+  --bg: #fbfaf7;
+  --ink: #141311;
+  --dim: #75706a;
+  --rule: #141311;
+  --hair: #dcd8d1;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #131211; --ink: #e3e0da; --dim: #8f8a83; --rule: #e3e0da; --hair: #33302c; }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 0 1.25rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 14px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { background: var(--ink); color: var(--bg); text-decoration: none; }
+
+/* ── Masthead ───────────────────────────────────────────── */
+.masthead {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: .9rem 0 .8rem;
+  border-top: 3px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 3rem;
+}
+.masthead .name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -.01em;
+  text-decoration: none;
+  margin-right: auto;
+}
+.masthead .name:hover { background: none; color: var(--ink); text-decoration: underline; }
+.masthead .meta {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--dim);
+  line-height: 1.5;
+  padding-top: .2rem;
+}
+.masthead nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding-top: .2rem;
+}
+.masthead nav a { text-decoration: none; }
+.masthead nav a:hover { background: var(--ink); color: var(--bg); }
+
+/* ── Sections ───────────────────────────────────────────── */
+section { margin-bottom: 3.5rem; }
+h2.sec {
+  font-size: .78rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .4rem;
+  margin: 0 0 1.4rem;
+}
+h2.sec .no { color: var(--dim); margin-right: 1.25rem; }
+
+.prose { max-width: 46rem; }
+.prose p { margin: 0 0 1.1rem; }
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+}
+h3 { font-size: .95rem; margin: 1.6rem 0 .4rem; }
+em { font-style: italic; }
+blockquote { margin: 1.4rem 0; padding-left: 1.2rem; border-left: 2px solid var(--hair); color: var(--dim); }
+
+/* ── Index rows ([01] numbered lists) ───────────────────── */
+.index { list-style: none; margin: 0; padding: 0; max-width: 60rem; }
+.index li {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 1rem;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--hair);
+}
+.index .no { color: var(--dim); }
+.index .t { font-weight: 700; }
+.index .d { color: var(--dim); display: block; margin-top: .1rem; }
+.index .d a { color: var(--dim); }
+.index .d a:hover { color: var(--bg); }
+
+/* ── Propositions ───────────────────────────────────────── */
+ol.propositions { max-width: 46rem; padding-left: 1.4rem; }
+ol.propositions li { margin-bottom: .8rem; }
+
+/* ── Footer ─────────────────────────────────────────────── */
+footer {
+  border-top: 3px solid var(--rule);
+  padding: 1rem 0 3rem;
+  font-size: .78rem;
+  margin-top: 4rem;
+}
+footer .eco { color: var(--dim); text-transform: uppercase; letter-spacing: .04em; max-width: 46rem; }
+footer .foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+footer .colophon { color: var(--dim); }
+
+@media (max-width: 640px) {
+  .masthead { flex-wrap: wrap; gap: .6rem 1.5rem; }
+  .masthead .meta { display: none; }
+  .index li { grid-template-columns: 2.4rem 1fr; }
+}
+p.d { color: var(--dim); }
+footer .cta { max-width: 46rem; margin: 1.4rem 0; }
+footer .cta p { margin: 0 0 .5rem; }

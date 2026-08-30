@@ -1,0 +1,33 @@
+# ── Site settings ───────────────────────────────────────────
+title: Grace Leonora Turtle
+description: >-
+  Colombian-Australian designer and researcher based in Amsterdam, working on
+  AI systems that open futures rather than foreclose them.
+url: ""            # e.g. https://graceturtle.github.io — set after first deploy
+baseurl: ""        # e.g. /repo-name if not deploying to a user page
+
+# ── Links ───────────────────────────────────────────────────
+email: grace@parallelstudio.ai
+substack_url: "https://substack.com/@grace862181"
+substack_name: "Substack"
+linkedin_url: "https://www.linkedin.com/in/grace-l-turtle-7119b553/"
+instagram_url: "https://www.instagram.com/gracetortuga"
+x_url: "https://x.com/grace_polifroni"
+parallel_url: "https://www.parallelstudio.ai/"
+monstrous_url: "https://sandberg.nl/departments/monstrous-futurities"
+dcode_url: "https://dcode-network.eu/cohort/grace-turtle/"
+dissertation_doi: "https://doi.org/10.4233/uuid:64ac5d12-82dd-4f29-af8a-75828d006a3b"
+
+# ── Collections ─────────────────────────────────────────────
+collections:
+  publications:
+    output: false   # publications are listed as an index; no individual pages
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+exclude: [README.md, venv, Gemfile, Gemfile.lock]
