@@ -34,27 +34,27 @@ marker: "3.1 DISSERTATION · 16"
 <section>
 <div class="sec-head"><span class="t">Three experimental engagements</span><span class="m">Year // 2022 → 2026</span></div>
 <div class="modules">
-  <div class="module">
+  <a class="module" href="https://doi.org/10.21606/drs.2022.782">
     <div class="top"><span>[01]</span><span class="tag">Vision</span></div>
     <span class="glyph">◐</span>
     <span class="t">Mutant in the Mirror</span>
     <span class="d">GAN-generated self-portraits explore AI as a nonbinary entity, resisting fixed recognition systems.</span>
     <span class="meta">Module A — GAN // Self-portraiture</span>
-  </div>
-  <div class="module">
+  </a>
+  <a class="module" href="https://doi.org/10.1007/s00146-025-02661-8">
     <div class="top"><span>[02]</span><span class="tag">Simulation</span></div>
     <span class="glyph">◔</span>
     <span class="t">Undoing Gracia</span>
     <span class="d">A multi-agent simulation grounded in autobiographical data traces how plural subjectivities emerge with a digital twin.</span>
     <span class="meta">Module B — Agents // Digital twin</span>
-  </div>
-  <div class="module">
+  </a>
+  <a class="module" href="https://doi.org/10.21606/drs.2026.2162">
     <div class="top"><span>[03]</span><span class="tag">Sound</span></div>
     <span class="glyph">◑</span>
     <span class="t">Sounding Territories</span>
     <span class="d">A sound-generative model embraces dis/identificatory codings and resists algorithmic capture.</span>
     <span class="meta">Module C — Audio // Generative</span>
-  </div>
+  </a>
 </div>
 </section>
 
