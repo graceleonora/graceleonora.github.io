@@ -1,45 +1,66 @@
 ---
 title: Dissertation
 permalink: /dissertation/
+marker: "3.1 DISSERTATION · 16"
 ---
 
-<section class="prose" markdown="1">
-<h2 class="sec"><span class="no">3.1</span>Dissertation</h2>
-
-# Queering AI *(Mariconiando a la AI)*
-
-(Re)orienting Design Practice Towards Co-Predictive Relations<br>
-PhD Dissertation · Delft University of Technology · 2026
-{: .d}
-
-[Download the dissertation from the TU Delft Repository ↗]({{ site.dissertation_doi }})
-
-### Abstract
-
-Predictive AI systems increasingly shape social and technological life by encoding human and nonhuman entities into fixed categories, constraining indeterminate and queer senses of futurity. This dissertation develops a more-than-human design practice of queering AI, reconfiguring predictive systems toward co-predictive, relational ways of knowing and worlding.
-
-Drawing on autotheory as a queer methodology grounded in lived experience, the research advances three experimental engagements that recode predictive systems from within. *Mutant in the Mirror* uses GAN-generated self-portraits to explore AI as a nonbinary entity, resisting fixed recognition systems. *Undoing Gracia* inhabits algorithmic borderlands through a multi-agent-based simulation grounded in autobiographical data, tracing how plural subjectivities emerge in interaction with a digital twin. *Sounding Territories* foregrounds embodied, more-than-human relations through a sound-generative model that embraces dis/identificatory codings and resists algorithmic capture. Working from a situated queer mestiza ethics, these experiments traverse AI development from data capture through post-training interaction.
-
-The thesis articulates three queer practice (re)orientations — **transmutations** (toward indeterminacy), **algorithmic borderlands** (toward thresholds), and **dis/identificatory codings** (toward illegibility) — and translates them into tactics for queering AI in practice. The research yields three contributions: (1) co-predictive relations as a theoretical framework countering logics of separability in predictive systems; (2) autotheory as an epistemically generative queer design method; and (3) redirective pathways for designers and scholars to cultivate desirable unpredictability and queer futurities.
+<section class="hero" style="border-bottom:1px solid var(--ink)">
+<div class="status"><span class="lead">[3.1]</span><span>Dissertation</span><span class="rule"></span><span>Status: Defended</span></div>
+<h1>Queering AI</h1>
+<div class="sub">(Mariconiando a la AI)</div>
+<div class="lede"><span class="bw-mark">(re)</span><span class="bw-word">orienting</span> design practice towards co-predictive relations.</div>
+<div class="actions">
+  <a href="{{ site.dissertation_doi }}">Download the dissertation from the TU Delft Repository ↗</a>
+</div>
 </section>
 
 <section>
-<h2 class="sec"><span class="no">3.2</span>Chapters</h2>
-<ul class="index">
-  <li><span class="no">[01]</span><span><span class="t">Introduction</span><span class="d">Unsettling prediction; turning from prediction to co-predictive relations; autotheory as a queer design methodology.</span></span></li>
-  <li><span class="no">[02]</span><span><span class="t">Mutant in the Mirror</span><span class="d">Queer becomings with AI.</span></span></li>
-  <li><span class="no">[03]</span><span><span class="t">Undoing Gracia</span><span class="d">Queering the self in the algorithmic borderlands.</span></span></li>
-  <li><span class="no">[04]</span><span><span class="t">Sounding Territories</span><span class="d">Dis/identificatory codings as relational worlding.</span></span></li>
-  <li><span class="no">[05]</span><span><span class="t">Designing for Co-Predictive Relations</span><span class="d">Queer (re)orientations and queering tactics.</span></span></li>
-  <li><span class="no">[06]</span><span><span class="t">Conclusion and Future Directions</span></span></li>
-</ul>
+<div class="split">
+  <div class="facts">
+    <div class="row"><span class="k">What:</span><span>PhD Dissertation</span></div>
+    <div class="row"><span class="k">Where:</span><span>Delft University of Technology</span></div>
+    <div class="row"><span class="k">When:</span><span>2026</span></div>
+    <div class="row"><span class="k">Who:</span><span>Grace Leonora Turtle</span></div>
+    <div class="row"><span class="k">DOI:</span><span><a href="{{ site.dissertation_doi }}">10.4233/uuid:64ac5d12-82dd-4f29-af8a-75828d006a3b</a></span></div>
+  </div>
+  <div class="abstract">
+    <div class="head"><span>Abstract</span><span class="rule"></span><span class="no">[000374-018]</span></div>
+    <p style="margin:0 0 14px">Predictive AI systems increasingly shape social and technological life by encoding human and nonhuman entities into fixed categories, constraining indeterminate and queer senses of futurity. This dissertation develops a more-than-human design practice of queering AI, reconfiguring predictive systems toward <em>co-predictive, relational ways of knowing and worlding</em>.</p>
+    <p style="margin:0">Drawing on autotheory as a queer methodology grounded in lived experience, the research advances three experimental engagements that recode predictive systems from within, traversing AI development from data capture through post-training interaction. The thesis articulates three queer practice (re)orientations — <em>transmutations</em> (toward indeterminacy), <em>algorithmic borderlands</em> (toward thresholds), and <em>dis/identificatory codings</em> (toward illegibility) — and translates them into tactics for queering AI in practice.</p>
+  </div>
+</div>
 </section>
 
-<section class="prose" markdown="1">
-<h2 class="sec"><span class="no">3.3</span>Propositions</h2>
+<section>
+<div class="sec-head"><span class="t">Three experimental engagements</span><span class="m">Year // 2022 → 2026</span></div>
+<div class="modules">
+  <div class="module">
+    <div class="top"><span>[01]</span><span class="tag">Vision</span></div>
+    <span class="glyph">◐</span>
+    <span class="t">Mutant in the Mirror</span>
+    <span class="d">GAN-generated self-portraits explore AI as a nonbinary entity, resisting fixed recognition systems.</span>
+    <span class="meta">Module A — GAN // Self-portraiture</span>
+  </div>
+  <div class="module">
+    <div class="top"><span>[02]</span><span class="tag">Simulation</span></div>
+    <span class="glyph">◔</span>
+    <span class="t">Undoing Gracia</span>
+    <span class="d">A multi-agent simulation grounded in autobiographical data traces how plural subjectivities emerge with a digital twin.</span>
+    <span class="meta">Module B — Agents // Digital twin</span>
+  </div>
+  <div class="module">
+    <div class="top"><span>[03]</span><span class="tag">Sound</span></div>
+    <span class="glyph">◑</span>
+    <span class="t">Sounding Territories</span>
+    <span class="d">A sound-generative model embraces dis/identificatory codings and resists algorithmic capture.</span>
+    <span class="meta">Module C — Audio // Generative</span>
+  </div>
+</div>
+</section>
 
-Propositions accompanying the dissertation, approved by the promotors Prof. dr. E. Giaccardi, Prof. dr. J. Redström, and Dr. R. Bendor:
-
+<section>
+<div class="sec-head"><span class="t">Propositions</span><span class="m">Approved by the promotors</span></div>
+<div class="prose">
 <ol class="propositions">
 <li>The greatest harm of predictive AI is not the future it predicts incorrectly, but the futures it renders unimaginable or impossible.</li>
 <li>Designing co-predictive relations holds open the conditions under which alternative life/worlds can emerge. <em>(This dissertation)</em></li>
@@ -52,4 +73,17 @@ Propositions accompanying the dissertation, approved by the promotors Prof. dr. 
 <li>Co-performance is foundational to our understanding and crafting of AI systems, as once was the notion of function to our understanding of tools. <em>(attributed to Elisa Giaccardi and Johan Redström)</em></li>
 <li>Queerness is not a being but a doing. <em>(José Esteban Muñoz, Cruising Utopia, 2009)</em></li>
 </ol>
+</div>
+</section>
+
+<section class="last" style="border-bottom:0;padding-bottom:40px">
+<div class="sec-head"><span class="t">Writing</span><span class="m">[Index] 4 of {{ site.publications | size }} — <a href="{{ '/#writing' | relative_url }}">View all →</a></span></div>
+{% include writing-table.html limit=4 skip_dissertation=true %}
+</section>
+
+<div class="seam"></div>
+
+<section class="pixel-quote">
+<span class="q">"The facts hold. Everything else is allowed to mutate."</span>
+<span class="by">Grace Leonora Turtle, Design Researcher</span>
 </section>

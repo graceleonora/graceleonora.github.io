@@ -5,20 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title and page.url != '/' %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&family=Fragment+Mono:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="fx-ripple"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.05" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+  </svg>
+
   <header class="masthead">
     <a class="name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <div class="meta">Design<br>Research</div>
-    <div class="meta">Amsterdam<br>{{ 'now' | date: '%Y' }}</div>
+    <span class="meta">Design<br>Research</span>
+    <span class="meta">V4<br>{{ 'now' | date: '%Y' }}</span>
     <nav>
       <a href="{{ '/#about' | relative_url }}">About</a>
       <a href="{{ '/#currently' | relative_url }}">Currently</a>
-      <a href="{{ '/dissertation/' | relative_url }}">Dissertation</a>
+      <a href="{{ '/dissertation/' | relative_url }}"{% if page.url contains 'dissertation' %} class="active"{% endif %}>Dissertation</a>
       <a href="{{ '/#writing' | relative_url }}">Writing</a>
       <a href="{{ site.substack_url }}">Substack&nbsp;↗</a>
     </nav>
+    <span class="marker">{{ page.marker | default: '0.0 INDEX' }}</span>
   </header>
 
   <main>
@@ -26,12 +34,15 @@
   </main>
 
   <footer>
-    <p class="eco">This website has been designed to minimise energy consumption and CO<sub>2</sub> emissions: no scripts, no tracking, no web fonts, almost no images.</p>
+    <p class="eco">This website has been designed to minimise energy consumption and CO<sub>2</sub> emissions: no scripts, no tracking, almost no images.</p>
     <div class="cta">
       <p>For writing, speaking and teaching enquiries, get in touch by <a href="mailto:{{ site.email }}">email</a>.</p>
       <p>For regular updates, follow me on <a href="{{ site.x_url }}">X&nbsp;↗</a> and <a href="{{ site.instagram_url }}">Instagram&nbsp;↗</a>, or connect with me on <a href="{{ site.linkedin_url }}">LinkedIn&nbsp;↗</a>.</p>
     </div>
-    <p class="colophon">© {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+    <div class="strip">
+      <span>{{ site.title }} · Amsterdam</span>
+      <span>Remote interface — Online · © {{ 'now' | date: '%Y' }}</span>
+    </div>
   </footer>
 </body>
 </html>

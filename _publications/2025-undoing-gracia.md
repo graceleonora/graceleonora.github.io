@@ -2,6 +2,8 @@
 title: "Undoing Gracia: Queering the Self in the Algorithmic Borderlands"
 type: Journal article
 venue: AI & SOCIETY 41, 3649–3666
+kind: "Paper · Research"
+table_venue: "AI & SOCIETY"
 date: 2025-12-04
 doi: "10.1007/s00146-025-02661-8"
 pdf: /assets/pdf/undoing-gracia.pdf

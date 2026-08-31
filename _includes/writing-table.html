@@ -1,0 +1,23 @@
+<div class="wtable">
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% assign shown = 0 %}
+{% for pub in pubs %}
+{% if include.skip_dissertation and pub.type == 'Dissertation' %}{% continue %}{% endif %}
+{% if include.limit and shown >= include.limit %}{% break %}{% endif %}
+{% assign shown = shown | plus: 1 %}
+{% capture href %}{% if pub.link %}{% if pub.link contains '://' %}{{ pub.link }}{% else %}{{ pub.link | relative_url }}{% endif %}{% else %}https://doi.org/{{ pub.doi }}{% endif %}{% endcapture %}
+  <div class="wrow">
+    <span class="no">{{ shown | prepend: '00' | slice: -2, 2 }}</span>
+    <span>
+      <a class="t" href="{{ href | strip }}">{{ pub.title }}</a>
+      <span class="links">
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">doi.org/{{ pub.doi }} ↗</a>{% endif %}
+        {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}">PDF ↓</a>{% endif %}
+      </span>
+    </span>
+    <span class="venue">{{ pub.table_venue | default: pub.venue }}</span>
+    <span class="kind">{{ pub.kind | default: pub.type }}</span>
+    <span class="year">{{ pub.date | date: "%Y" }}</span>
+  </div>
+{% endfor %}
+</div>
