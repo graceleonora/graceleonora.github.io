@@ -84,6 +84,6 @@ marker: "3.1 DISSERTATION · 16"
 <div class="seam"></div>
 
 <section class="pixel-quote">
-<span class="q">"The facts hold. Everything else is allowed to mutate."</span>
-<span class="by">Grace Leonora Turtle, Design Researcher</span>
+<span class="q">"The map is not the territory, and yet it governs how the territory is seen and acted upon. Designing for co-predictive relations means holding that map open."</span>
+<span class="by">Grace Turtle</span>
 </section>
